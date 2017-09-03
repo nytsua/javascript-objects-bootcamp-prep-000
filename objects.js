@@ -1,6 +1,8 @@
 var playlist = {};
 playlist['Of monsters and men'] = 'Little Talks';
 
-function updatePlaylist(obj, artist, song){
-  return Object.assign({}, obj, {artist: song});
+function updatePlaylist(playlist, artistName, songTitle){
+  var initalObj = {};
+  initalObj[artistName] = songTitle
+  return Object.assign({}, playlist, initalObj);
 }
